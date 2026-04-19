@@ -1,9 +1,15 @@
+<?php
+// No PHP logic needed for static HTML/CSS/JS conversion.
+// The entire file is served as HTML, but with a .php extension
+// to allow for future server-side enhancements.
+header('Content-Type: text/html; charset=utf-8');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BigBasket</title>
+    <title>BigBasket Clone</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -2152,7 +2158,7 @@
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
 
 <!-- ==================== MY ORDERS PAGE ==================== -->
-<div id="orders-page" class="orders-page">
+<div id="orders-page" class="orders-page" style="display: none;">
     <div class="orders-header">
         <div class="back-btn" onclick="goHome()">
             <span style="font-size:18px;">←</span>
